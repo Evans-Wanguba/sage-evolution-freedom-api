@@ -34,7 +34,10 @@ $response = $sage->getTransaction('SalesOrderExists?orderNo=SO0001');
 $response = $sage->postTransaction('InventoryItemInsert', (object)["item" => ["Code" => "ISS001"]]);
 
 // Place a sales order
-$response = $sage->postTransaction('SalesOrderPlaceOrder', (object)["quote" =>["CustomerAccountCode" => "CASH","OrderDate" => "\/Date(1627825101757+0300)\/","InvoiceDate" => "\/Date(1627825101757+0300)\/","Lines" => [["StockCode" => "Test","WarehouseCode" => "Mstr","TaxCode" => "1","Quantity" => 1,"ToProcess" => 1,"UnitPrice" => 200.00], ["StockCode" => "Test","TaxCode" => "1","Quantity" => 1,"ToProcess" => 1,"UnitPrice" => 200.00]],"FinancialLines" => []]]);
+$response = $sage->postTransaction('SalesOrderPlaceOrder', (object)["quote" =>["CustomerAccountCode" => "CASH","OrderDate" => "\/Date(1627825101757+0300)\/","Lines" => [["StockCode" => "Test","WarehouseCode" => "Mstr","Quantity" => 1,"UnitPrice" => 200.00], ["StockCode" => "Test","Quantity" => 1,"UnitPrice" => 200.00]],"FinancialLines" => []]]);
+
+// Sales order process invoice
+$response = $sage->postTransaction('SalesOrderProcessInvoice', (object)["quote" =>["CustomerAccountCode" => "CASH","OrderDate" => "\/Date(1627825101757+0300)\/","InvoiceDate" => "\/Date(1627825101757+0300)\/","Lines" => [["StockCode" => "Test","WarehouseCode" => "Mstr","TaxCode" => "1","Quantity" => 1,"ToProcess" => 1,"UnitPrice" => 200.00], ["StockCode" => "Test","TaxCode" => "1","Quantity" => 1,"ToProcess" => 1,"UnitPrice" => 200.00]],"FinancialLines" => []]]);
 
 // Echo the response
 echo $response;
