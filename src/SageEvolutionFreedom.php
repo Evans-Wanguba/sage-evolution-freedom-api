@@ -6,7 +6,7 @@ use GuzzleHttp\Client;
 use GuzzleHttp\Promise;
 
 /**
- * Class Cashier.
+ * Class SageEvolutionFreedom.
  *
  * @category PHP
  * @author   Evans Wanguba <ewanguba@gmail.com>
@@ -28,7 +28,7 @@ class SageEvolutionFreedom
     private $client;
 
     /**
-     * Cashier constructor.
+     * SageEvolutionFreedom constructor.
      */
     public function __construct()
     {

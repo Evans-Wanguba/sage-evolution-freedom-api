@@ -10,7 +10,7 @@
 namespace Evans-Wanguba\Sage;
 
 use Illuminate\Support\ServiceProvider;
-use Evans-Wanguba\Sage\SageEvolution;
+use Evans-Wanguba\Sage\SageEvolutionFreedom;
 
 class SageEvolutionFreedomServiceProvider extends ServiceProvider
 {
@@ -31,8 +31,8 @@ class SageEvolutionFreedomServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(SageEvolution::class, function () {
-            return new SageEvolution();
+        $this->app->singleton(SageEvolutionFreedom::class, function () {
+            return new SageEvolutionFreedom();
         });
     }
 }
