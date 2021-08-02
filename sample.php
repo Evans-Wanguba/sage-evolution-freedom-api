@@ -36,4 +36,5 @@ $response = $sage->postTransaction('InventoryItemInsert', (object)["item" => ["C
 // Place a sales order
 $response = $sage->postTransaction('SalesOrderPlaceOrder', (object)["quote" =>["CustomerAccountCode" => "CASH","OrderDate" => "\/Date(1627825101757+0300)\/","InvoiceDate" => "\/Date(1627825101757+0300)\/","Lines" => [["StockCode" => "Test","WarehouseCode" => "Mstr","TaxCode" => "1","Quantity" => 1,"ToProcess" => 1,"UnitPrice" => 200.00], ["StockCode" => "Test","TaxCode" => "1","Quantity" => 1,"ToProcess" => 1,"UnitPrice" => 200.00]],"FinancialLines" => []]]);
 
+// Echo the response
 echo $response;
