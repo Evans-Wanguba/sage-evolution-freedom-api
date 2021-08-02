@@ -1,21 +1,7 @@
 {
     "name": "evans-wanguba/sage-evolution-freedom-api",
+    "keywords": ["laravel sage", "sage evolution", "freedom api"],
     "description": "This is a PHP package for handling Sage Evolution Freedom web service integration",
-    "type": "library",
-    "keywords": ["sage", "sage evolution", "sage evolution 100", "sage evolution 200", "sage evolution freedom"],
-    "autoload": {
-        "psr-4": {
-            "Evans-Wanguba\\Sage\\": "src/SageEvolutionFreedom/"
-        }
-    },
-    "require": {
-        "php": "^7.3",
-        "guzzlehttp/guzzle": "^7.0.1"
-    },
-    "require-dev": {
-        "mockery/mockery": "^1.3.1",
-        "phpunit/phpunit": "^9.3"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -23,5 +9,28 @@
             "email": "ewanguba@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "~6.0|~7.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "~1.3.1",
+        "phpunit/phpunit": "~9.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Evans-Wanguba\\Sage\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Evans-Wanguba\\Sage\\SageEvolutionFreedomServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev"
 }
