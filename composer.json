@@ -1,5 +1,5 @@
 {
-    "name": "Evans-Wanguba/sage-evolution-freedom-api",
+    "name": "evans-wanguba/sage-evolution-freedom-api",
     "description": "This is a PHP package for handling Sage Evolution Freedom web service integration",
     "type": "library",
     "keywords": ["sage", "sage evolution", "sage evolution 100", "sage evolution 200", "sage evolution freedom"],
