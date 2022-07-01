@@ -7,7 +7,7 @@ is designed to cater for a wide-ranging of functions that allows a merchant to h
 
 Pull in the package through Composer.
 ```bash
-composer require evans-wanguba/sage-evolution-freedom-api
+composer require EvansWanguba/sage-evolution-freedom-api
 ```
 
 Create the following variables in your .env file.
@@ -40,7 +40,7 @@ SAGE_AGENT_PASSWORD=agentpassword
 ## Usage
 To make a create customer request is simple. Just initiate the `SageEvolutionFreedom` and post the transaction:
 ```php
-use Evans-Wanguba\Sage\SageEvolutionFreedom;
+use EvansWanguba\Sage\SageEvolutionFreedom;
 
 require "vendor/autoload.php";
 

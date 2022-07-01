@@ -7,10 +7,10 @@
  * @Last Modified time: 2021-07-16 17:15:18
  */
 
-namespace Evans-Wanguba\Sage;
+namespace EvansWanguba\Sage;
 
 use Illuminate\Support\ServiceProvider;
-use Evans-Wanguba\Sage\SageEvolutionFreedom;
+use EvansWanguba\Sage\SageEvolutionFreedom;
 
 class SageEvolutionFreedomServiceProvider extends ServiceProvider
 {

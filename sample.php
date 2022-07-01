@@ -1,6 +1,6 @@
 <?php
 
-use Evans-Wanguba\Sage\SageEvolutionFreedom;
+use EvansWanguba\Sage\SageEvolutionFreedom;
 
 require "vendor/autoload.php";
 

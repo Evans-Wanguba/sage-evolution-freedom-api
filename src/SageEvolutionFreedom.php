@@ -1,6 +1,6 @@
 <?php
 
-namespace Evans-Wanguba\Sage;
+namespace EvansWanguba\Sage;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise;
