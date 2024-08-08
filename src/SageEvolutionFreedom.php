@@ -18,7 +18,7 @@ class SageEvolutionFreedom
      *
      * @var string
      */
-    private $baseUri = 'http://YourIp:5000/freedom.core/DatabaseName/SDK/Rest/';
+    private $baseUri = 'http://'.env('SAGE_IP_ADDRESS').':'.env('SAGE_PORT').'/freedom.core/DatabaseName/SDK/Rest/';
 
     /**
      * The Guzzle HTTP Client.

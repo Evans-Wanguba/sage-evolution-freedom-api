@@ -12,6 +12,8 @@ composer require EvansWanguba/sage-evolution-freedom-api
 
 Create the following variables in your .env file.
 ```bash
+SAGE_IP_ADDRESS=ipaddresswheresageishosted
+SAGE_PORT=5000
 SAGE_AGENT_USERNAME=agentusername
 SAGE_AGENT_PASSWORD=agentpassword
 ```
@@ -46,6 +48,18 @@ require "vendor/autoload.php";
 
 $sage = new SageEvolutionFreedom();
 
-$response = $sage->postTransaction('CustomerInsert', (object)["client" => ["Active" => true, "Description" => "John Doe", "ChargeTax" => true, "Code" => "JON001"]]);
+$data = [
+    "client" => [
+        "Active" => true,
+        "Description" => "John Doe",
+        "ChargeTax" => true,
+        "Code" => "JON001",
+    ]
+];
+$response = $sage->postTransaction('CustomerInsert', (object)$data);
 ```
 The `$response` is either JSON or XML depending on the function.
+
+## Support
+See `sample.php` for more examples. The API documentation is also available in the `docs` folder.
+Or email me at `ewanguba@gmail.com`
