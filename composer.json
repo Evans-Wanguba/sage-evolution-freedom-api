@@ -1,5 +1,5 @@
 {
-    "name": "EvansWanguba/sage-evolution-freedom-api",
+    "name": "evans-wanguba/sage-evolution-freedom-api",
     "keywords": ["laravel sage", "sage evolution", "freedom api"],
     "description": "This is a PHP package for handling Sage Evolution Freedom web service integration",
     "license": "MIT",
